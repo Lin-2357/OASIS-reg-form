@@ -1,4 +1,5 @@
 import fitz
+import codecs
 import pyperclip
 
 def checkClause(filename):
@@ -9,9 +10,9 @@ def checkClause(filename):
         pointer = 0
         for page_num in range(pdf_reader.page_count):
             page = pdf_reader.load_page(page_num)
-            tx = page.get_text().replace("\n", "")
-            if page_num == 3:
-                print(tx)
+            tx = ''.join(filter(lambda x : x in "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890(),.@:;/", page.get_text()))
+            # if page_num == 0:
+            #     print(codecs.decode(tx, "unicode_escape"))
             text += tx
             pages += [pointer]
             pointer += len(tx)
@@ -22,11 +23,19 @@ def checkClause(filename):
     clauses["Anti-haze Clause"] = "We will not haze according to California State Law."
     clauses['Non-discrimination Clause'] = "We will not restrict membership based upon race, color, national origin, religion, sex, gender identity, pregnancy (including pregnancy, childbirth, and medical conditions related to pregnancy or childbirth), physical or mental disability, medical condition (cancer related or genetic characteristics), ancestry, marital status, age, sexual orientation, citizenship, or service in the uniformed services (including membership, application for membership, performance of service, application for service, or obligation for service in the uniformed services)."
     clauses['Amendments Clause (address needs updating) ie. what was formerly LEAD Center and 432 Eshleman is now outdated. Please edit your Amendments clause to state →> "All amendments, additions or deletions to this document must be filed with the OASIS Center at oasis.center@berkeley.edu, or OASIS Center at 312 Eshleman Hall.'] = "All amendments, additions or deletions to this document must be filed with the OASIS Center at oasis.center@berkeley.edu, or OASIS Center at 312 Eshleman Hall. "
+    
+    for x in clauses:
+        clauses[x] = clauses[x].replace(" ", "")
+    
     def diss(text):
         base = "If the organization is ASUC or GA Sponsored, all unspent ASUC funds shall return to the ASUC; all Graduate Assembly funds shall return to the Graduate Assembly. If the organization is defunct for five (5) or more years, any privately obtained funds (including any funds left in miscellaneous accounts) shall be "
         a1 = "donated to the ASUC"
         a2 = "donated to the following nonprofit organization: "
         a22 = "In the event that the designated nonprofit organization no longer exists or has ceased to be a nonprofit, then the unspent funds shall be donated to the ASUC."
+        base.replace(" ", "")
+        a1.replace(" ", "")
+        a2.replace(" ", "")
+        a22.replace(" ", "")
         if base+a1 in text:
             num = text.index(base+a1)
             for i in range(len(pages)):
