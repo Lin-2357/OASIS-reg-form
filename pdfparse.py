@@ -49,19 +49,19 @@ def checkClause(filename):
             if x in text:
                 num = text.index(x)
             else:
-                print("missing clause", j)
+                print("missing clause", j[:min(len(j), j.index("Clause")+6)])
                 missing.append(j)
                 continue
             for i in range(len(pages)):
                 if pages[i] >= num:
-                    print(j+': page '+str(i))
+                    print(j[:min(len(j), j.index("Clause")+6)]+': page '+str(i))
                     break
         else:
             i = x(text)
             if i > 0:
-                print(j+': page '+str(i))
+                print(j[:min(len(j), j.index("Clause")+6)]+': page '+str(i))
             else:
-                print("missing clause", j)
+                print("missing clause", j[:min(len(j), j.index("Clause")+6)])
                 missing.append(j)
                 continue
 
