@@ -9,7 +9,9 @@ def checkClause(filename):
         pointer = 0
         for page_num in range(pdf_reader.page_count):
             page = pdf_reader.load_page(page_num)
-            tx = page.get_text().replace("\n", " ")
+            tx = page.get_text().replace("\n", "")
+            if page_num == 3:
+                print(tx)
             text += tx
             pages += [pointer]
             pointer += len(tx)
