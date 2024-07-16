@@ -20,7 +20,7 @@ def checkClause(filename):
 
     clauses = {}
     clauses["Membership Clause"] = "Only currently registered students, faculty, and staff may be active members in a registered student organization. Only active members may vote or hold office"
-    clauses["Anti-haze Clause"] = "We will not haze according to Califpornia State Law"
+    clauses["Anti-haze Clause"] = "We will not haze according to California State Law"
     clauses['Non-discrimination Clause'] = "We will not restrict membership based upon race, color, national origin, religion, sex, gender identity, pregnancy (including pregnancy, childbirth, and medical conditions related to pregnancy or childbirth), physical or mental disability, medical condition (cancer related or genetic characteristics), ancestry, marital status, age, sexual orientation, citizenship, or service in the uniformed services (including membership, application for membership, performance of service, application for service, or obligation for service in the uniformed services)"
     clauses['Amendments Clause (address needs updating) ie. what was formerly LEAD Center and 432 Eshleman is now outdated. Please edit your Amendments clause to state →> "All amendments, additions or deletions to this document must be filed with the OASIS Center at oasis.center@berkeley.edu, or OASIS Center at 312 Eshleman Hall.'] = "All amendments, additions or deletions to this document must be filed with the OASIS Center at oasis.center@berkeley.edu, or OASIS Center at 312 Eshleman Hall"
     
