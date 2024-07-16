@@ -6,7 +6,7 @@ Download the constitution file into the same folder as this readme file.
 # Step 2
 Convert the file to pdf format (using save as) if it is word or other format, and copy the file name on the clipboard (with or without the .pdf extension are both fine).
 # Step 3
-Make sure you have python installed on your device. If you are using it for the first time, click and run build.bat for windows, or run build.command (in development) for mac.
+Make sure you have python installed on your device (use https://www.python.org/downloads/ if not). If you are using it for the first time, click and run build.bat for windows, or run build.command (in development) for mac.
 # Step 4
 Click and run start.bat for windows, run start.command (in development) for mac.
 # Step 5
