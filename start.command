@@ -1,3 +1,3 @@
 osascript -e 'tell app "Terminal"
-    do script "py main.py"
+    do script "python3 main.py"
 end tell'
