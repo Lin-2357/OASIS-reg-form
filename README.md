@@ -1,5 +1,5 @@
 # OASIS-reg-form
-Check if an RSO constitution file contains the required clauses
+Check if an RSO constitution file contains the required clauses, follow the steps if you are using it for the first time, otherwise you only need step 2 and step 4.
 
 ## Step 1
 Download the constitution file into the same folder as this readme file. (Recommend for mac users to download it into desktop)
