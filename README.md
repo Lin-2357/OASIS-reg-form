@@ -2,7 +2,7 @@
 Check if an RSO constitution file contains the required clauses
 
 ## Step 1
-Download the constitution file into the same folder as this readme file.
+Download the constitution file into the same folder as this readme file. (Recommend for mac users to download it into desktop)
 ## Step 2
 Convert the file to pdf format (using save as) if it is word or other format, and copy the file name on the clipboard (with or without the .pdf extension are both fine).
 ## For MacOS Users
