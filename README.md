@@ -1,12 +1,12 @@
 # OASIS-reg-form
-Check if an RSO constitution file contains the required clauses, follow the steps if you are using it for the first time, otherwise you only need step 2 and step 4.
+Check if an RSO constitution file contains the required clauses, follow the steps if you are using it for the first time, otherwise you skip step 3.
 
 ## Step 1
 Download the constitution file into the same folder as this readme file. (Recommend for mac users to download it into desktop)
 ## Step 2
 Convert the file to pdf format (using save as) if it is word or other format, and copy the file name on the clipboard (with or without the .pdf extension are both fine).
 ## For MacOS Users
-Right Click on this folder (contains this README), select "open in terminal", copy the below command and paste in the terminal window, press enter.
+If using it for the first time, right Click on this folder (contains this README), select "open in terminal", copy the below command and paste in the terminal window, press enter.
 ```
 chmod +x start.command
 chmod +x build.command
